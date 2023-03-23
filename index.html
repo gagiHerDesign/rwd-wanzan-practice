@@ -391,7 +391,7 @@
             var top = "top: " + getRandomInt(mousePos.y - range - sizeInt, mousePos.y + range) + "px;";
 
             var style = left + top + colors + size;
-            // $("<div class='ball' style='" + style + "'></div>").appendTo('#wrap').one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function () { $(this).remove(); });
+            $("<div class='ball' style='" + style + "'></div>").appendTo('#wrap').one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function () { $(this).remove(); });
           }
         }, 10);
       });
@@ -673,22 +673,22 @@
             }, '<')
 
           // 服務----------------------
-          const service_tl = gsap.timeline({
-            scrollTrigger: {
-              trigger: '#services',
-              start: '50% 90%',
-              end: 'center center',
-              scrub: true,
-              markers: false
-            },
+          // const service_tl = gsap.timeline({
+          //   scrollTrigger: {
+          //     trigger: '#services',
+          //     start: '50% 90%',
+          //     end: 'center center',
+          //     scrub: true,
+          //     markers: false
+          //   },
 
-          })
+          // })
 
-          service_tl
-            .from('.popup', {
-              scale: 0.1,
-              y: 300
-            }, '<')
+          // service_tl
+          //   .from('.popup', {
+          //     scale: 0.1,
+          //     y: 300
+          //   }, '<')
 
         },
 
